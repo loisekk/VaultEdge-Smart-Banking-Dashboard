@@ -317,7 +317,6 @@ if menu == "Home" and not st.session_state.logged_in:
         fig3.update_layout(plotly_dark_layout())
         st.plotly_chart(fig3, use_container_width=True)
 
-
 # 🔐 LOGIN
 
 elif menu == "Login" and not st.session_state.logged_in:
