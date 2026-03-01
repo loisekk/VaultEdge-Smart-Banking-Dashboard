@@ -185,6 +185,7 @@ def add_transaction(user, tx_type, amount, note=""):
 def format_currency(amount):
     return f"₹ {amount:,.2f}"
 
+
 def plotly_dark_layout():
     return dict(
         paper_bgcolor='rgba(0,0,0,0)',
