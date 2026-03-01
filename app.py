@@ -154,7 +154,6 @@ if "current_user" not in st.session_state:
 if "admin_logged_in" not in st.session_state:
     st.session_state.admin_logged_in = False
 
-
 # HELPERS
 
 def hash_pin(pin: str) -> str:
