@@ -464,7 +464,6 @@ elif menu == "Dashboard" and st.session_state.logged_in:
             hide_index=True
         )
 
-
 # 📜 TRANSACTIONS PAGE
 
 elif menu == "Transactions" and st.session_state.logged_in:
