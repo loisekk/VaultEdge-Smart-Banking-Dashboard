@@ -1,7 +1,7 @@
 [
     {
         "accountNo": "1001",
-        "name": "Arjun Mehta",
+        "name": "gojo satoru",
         "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "balance": 16000,
         "transactions": [
@@ -22,7 +22,7 @@
     },
     {
         "accountNo": "1002",
-        "name": "Priya Sharma",
+        "name": "suguru geto",
         "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "balance": 11292,
         "transactions": [
@@ -43,7 +43,7 @@
     },
     {
         "accountNo": "1003",
-        "name": "Rohan Das",
+        "name": "Shoko",
         "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
         "balance": 14956,
         "transactions": [
@@ -64,7 +64,7 @@
     },
     {
         "accountNo": "12500",
-        "name": "yash brahmankar",
+        "name": "yash ",
         "pin": "dc99de4709eb45d5a165a3e243dd75a1f1cfc3afb078211a4c26bc730d0fb241",
         "balance": 0,
         "transactions": [],
