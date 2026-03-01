@@ -612,7 +612,6 @@ elif menu == "Admin":
             st.success(f"Account {acc_no} deleted.")
             st.rerun()
 
-
 # FOOTER
 
 st.markdown("---")
