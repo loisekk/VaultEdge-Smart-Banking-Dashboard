@@ -412,6 +412,7 @@ elif menu == "Dashboard" and st.session_state.logged_in:
     st.subheader("⚡ Quick Actions")
     col1, col2 = st.columns(2)
 
+    
     with col1:
         st.markdown('<div class="card">', unsafe_allow_html=True)
         st.markdown("#### 📥 Deposit")
