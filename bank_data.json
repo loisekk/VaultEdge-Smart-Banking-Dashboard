@@ -1,0 +1,73 @@
+[
+    {
+        "accountNo": "1001",
+        "name": "Arjun Mehta",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 16000,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 7001,
+                "note": "Initial deposit",
+                "date": "2026-03-01 18:06:44.073895"
+            },
+            {
+                "type": "Withdraw",
+                "amount": 513,
+                "note": "ATM withdrawal",
+                "date": "2026-03-01 18:06:44.073903"
+            }
+        ],
+        "created_at": "2026-03-01 18:06:44.073917"
+    },
+    {
+        "accountNo": "1002",
+        "name": "Priya Sharma",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 11292,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 4280,
+                "note": "Initial deposit",
+                "date": "2026-03-01 18:06:44.073921"
+            },
+            {
+                "type": "Withdraw",
+                "amount": 587,
+                "note": "ATM withdrawal",
+                "date": "2026-03-01 18:06:44.073923"
+            }
+        ],
+        "created_at": "2026-03-01 18:06:44.073929"
+    },
+    {
+        "accountNo": "1003",
+        "name": "Rohan Das",
+        "pin": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+        "balance": 14956,
+        "transactions": [
+            {
+                "type": "Deposit",
+                "amount": 6607,
+                "note": "Initial deposit",
+                "date": "2026-03-01 18:06:44.073932"
+            },
+            {
+                "type": "Withdraw",
+                "amount": 1219,
+                "note": "ATM withdrawal",
+                "date": "2026-03-01 18:06:44.073935"
+            }
+        ],
+        "created_at": "2026-03-01 18:06:44.073939"
+    },
+    {
+        "accountNo": "12500",
+        "name": "yash brahmankar",
+        "pin": "dc99de4709eb45d5a165a3e243dd75a1f1cfc3afb078211a4c26bc730d0fb241",
+        "balance": 0,
+        "transactions": [],
+        "created_at": "2026-03-01 18:19:08.308393"
+    }
+]
