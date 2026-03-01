@@ -387,7 +387,6 @@ elif menu == "Create Account" and not st.session_state.logged_in:
 
         st.markdown("</div>", unsafe_allow_html=True)
 
-
 # 📊 USER DASHBOARD (Logged In)
 
 elif menu == "Dashboard" and st.session_state.logged_in:
