@@ -4,7 +4,6 @@ import random
 import string
 
 
-
 class Bank:
     database = "data.json"
     data = []
