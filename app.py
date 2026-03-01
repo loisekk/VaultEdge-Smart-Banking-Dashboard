@@ -10,7 +10,6 @@ from datetime import datetime
 
 
 # PAGE CONFIG
-
 st.set_page_config(
     page_title="NeoBank X",
     page_icon="🏦",
@@ -20,7 +19,6 @@ st.set_page_config(
 
 
 # CUSTOM CSS
-
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
