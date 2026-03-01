@@ -8,9 +8,9 @@ import plotly.express as px
 import plotly.graph_objects as go
 from datetime import datetime
 
-# ---------------------------
+
 # PAGE CONFIG
-# ---------------------------
+
 st.set_page_config(
     page_title="NeoBank X",
     page_icon="🏦",
@@ -18,9 +18,9 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------------------------
+
 # CUSTOM CSS
-# ---------------------------
+
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap');
@@ -148,9 +148,9 @@ st.markdown("""
 DATA_FILE = "bank_data.json"
 ADMIN_PIN = hashlib.sha256("admin123".encode()).hexdigest()  # Change this!
 
-# ---------------------------
+
 # SESSION STATE INIT
-# ---------------------------
+
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "current_user" not in st.session_state:
@@ -158,9 +158,9 @@ if "current_user" not in st.session_state:
 if "admin_logged_in" not in st.session_state:
     st.session_state.admin_logged_in = False
 
-# ---------------------------
+
 # HELPERS
-# ---------------------------
+
 def hash_pin(pin: str) -> str:
     return hashlib.sha256(pin.encode()).hexdigest()
 
@@ -199,9 +199,9 @@ def plotly_dark_layout():
         margin=dict(l=20, r=20, t=40, b=20)
     )
 
-# ---------------------------
+
 # AUTO DEMO DATA IF EMPTY
-# ---------------------------
+
 data = load_data()
 if len(data) == 0:
     demo_names = ["Arjun Mehta", "Priya Sharma", "Rohan Das"]
@@ -220,9 +220,9 @@ if len(data) == 0:
         })
     save_data(data)
 
-# ---------------------------
+
 # SIDEBAR
-# ---------------------------
+
 with st.sidebar:
     st.markdown("## 🏦 NeoBank X")
     st.markdown("---")
@@ -247,9 +247,9 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("<small style='color:#555'>NeoBank X v2.0 • Secure Banking</small>", unsafe_allow_html=True)
 
-# ======================================================
+
 # 🏠 HOME
-# ======================================================
+
 if menu == "Home" and not st.session_state.logged_in:
     st.markdown('<div class="main-header">Welcome to NeoBank X</div>', unsafe_allow_html=True)
     st.markdown("##### Modern, secure digital banking — built for everyone.")
@@ -322,9 +322,9 @@ if menu == "Home" and not st.session_state.logged_in:
         fig3.update_layout(plotly_dark_layout())
         st.plotly_chart(fig3, use_container_width=True)
 
-# ======================================================
+
 # 🔐 LOGIN
-# ======================================================
+
 elif menu == "Login" and not st.session_state.logged_in:
     st.markdown('<div class="main-header">User Login</div>', unsafe_allow_html=True)
     st.markdown("##### Access your account securely.")
@@ -351,9 +351,9 @@ elif menu == "Login" and not st.session_state.logged_in:
 
     st.info("💡 **Demo Accounts**: Account No: 1001 / 1002 / 1003 | PIN: 1234")
 
-# ======================================================
+
 # 🆕 CREATE ACCOUNT
-# ======================================================
+
 elif menu == "Create Account" and not st.session_state.logged_in:
     st.markdown('<div class="main-header">Create Account</div>', unsafe_allow_html=True)
 
@@ -393,9 +393,9 @@ elif menu == "Create Account" and not st.session_state.logged_in:
 
         st.markdown("</div>", unsafe_allow_html=True)
 
-# ======================================================
+
 # 📊 USER DASHBOARD (Logged In)
-# ======================================================
+
 elif menu == "Dashboard" and st.session_state.logged_in:
     data = load_data()
     idx = get_user_index(data, st.session_state.current_user["accountNo"])
@@ -469,9 +469,9 @@ elif menu == "Dashboard" and st.session_state.logged_in:
             hide_index=True
         )
 
-# ======================================================
+
 # 📜 TRANSACTIONS PAGE
-# ======================================================
+
 elif menu == "Transactions" and st.session_state.logged_in:
     data = load_data()
     idx = get_user_index(data, st.session_state.current_user["accountNo"])
@@ -516,9 +516,9 @@ elif menu == "Transactions" and st.session_state.logged_in:
             hide_index=True
         )
 
-# ======================================================
+
 # 💸 TRANSFER PAGE
-# ======================================================
+
 elif menu == "Transfer" and st.session_state.logged_in:
     data = load_data()
     idx = get_user_index(data, st.session_state.current_user["accountNo"])
@@ -562,9 +562,9 @@ elif menu == "Transfer" and st.session_state.logged_in:
 
         st.markdown("</div>", unsafe_allow_html=True)
 
-# ======================================================
+
 # 👨‍💼 ADMIN
-# ======================================================
+
 elif menu == "Admin":
     st.markdown('<div class="main-header">Admin Panel</div>', unsafe_allow_html=True)
 
@@ -618,9 +618,9 @@ elif menu == "Admin":
             st.success(f"Account {acc_no} deleted.")
             st.rerun()
 
-# ======================================================
+
 # FOOTER
-# ======================================================
+
 st.markdown("---")
 st.markdown(
     "<div style='text-align:center; color:#444; font-size:0.8rem;'>🏦 NeoBank X v2.0 • Secure Digital Banking • Built with Streamlit</div>",
