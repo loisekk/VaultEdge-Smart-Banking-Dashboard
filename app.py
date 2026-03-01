@@ -195,7 +195,6 @@ def plotly_dark_layout():
         margin=dict(l=20, r=20, t=40, b=20)
     )
 
-
 # AUTO DEMO DATA IF EMPTY
 
 data = load_data()
